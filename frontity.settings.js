@@ -1,57 +1,27 @@
 const settings = {
-  "name": "kaylamoz",
-  "state": {
-    "frontity": {
-      "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
-    }
+  name: "kaylamoz",
+  state: {
+    frontity: {
+      url: "https://data.kaylamoz.com",
+      title: "Kayla Moz website",
+      description: "Official website of Kayla Moz.",
+    },
   },
-  "packages": [
+  packages: [
     {
-      "name": "@frontity/mars-theme",
-      "state": {
-        "theme": {
-          "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
-          ],
-          "featured": {
-            "showOnList": false,
-            "showOnPost": false
-          }
-        }
-      }
+      name: "KaylaMozTheme",
     },
     {
-      "name": "@frontity/wp-source",
-      "state": {
-        "source": {
-          "url": "https://test.frontity.org"
-        }
-      }
+      name: "@frontity/wp-source",
+      state: {
+        source: {
+          url: "https://test.frontity.org",
+        },
+      },
     },
     "@frontity/tiny-router",
-    "@frontity/html2react"
-  ]
+    "@frontity/html2react",
+  ],
 };
 
 export default settings;
