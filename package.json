@@ -17,12 +17,16 @@
   },
   "prettier": {},
   "dependencies": {
-    "@frontity/core": "^1.14.3",
+    "@frontity/core": "^1.15.1",
     "@frontity/html2react": "^1.7.0",
-    "@frontity/mars-theme": "./packages/mars-theme",
+    "@frontity/mars-theme": "latest",
     "@frontity/tiny-router": "^1.4.4",
-    "@frontity/wp-source": "^1.11.6",
-    "frontity": "^1.17.1",
+    "@frontity/wp-source": "^1.11.7",
+    "dayjs": "^1.11.0",
+    "frontity": "^1.17.2",
     "KaylaMozTheme": "file:packages/KaylaMozTheme"
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0"
   }
 }
