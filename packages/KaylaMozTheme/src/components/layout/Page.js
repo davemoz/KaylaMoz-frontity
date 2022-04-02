@@ -7,10 +7,10 @@ const Page = ({ state, libraries }) => {
   const Html2React = libraries.html2react.Component;
 
   return (
-    <div>
+    <>
       <h2>{page.title.rendered}</h2>
       <Html2React html={page.content.rendered} />
-    </div>
+    </>
   );
 };
 

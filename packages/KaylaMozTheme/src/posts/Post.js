@@ -1,5 +1,5 @@
 import React from "react";
-import { connect, Head } from "frontity";
+import { connect } from "frontity";
 import dayjs from "dayjs";
 
 const Post = ({ state, libraries }) => {
@@ -12,10 +12,6 @@ const Post = ({ state, libraries }) => {
 
   return (
     <div>
-      <Head>
-        <title>Kayla Moz - Posts - {post.title.rendered}</title>
-        <meta name="description" content={post.excerpt.rendered} />
-      </Head>
       <h2>{post.title.rendered}</h2>
       <p>
         <strong>Posted: </strong>

@@ -12,7 +12,7 @@ const ContentWidth = ({ children }) => {
 export default ContentWidth;
 
 const Main = styled.main`
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   padding: 40px;
 
   ${getMediaQuery(deviceWidths[768])} {

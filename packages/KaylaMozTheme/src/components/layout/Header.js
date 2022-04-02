@@ -22,6 +22,7 @@ export default Header;
 
 const HeaderWrap = styled.header`
   background-color: #e5edee;
+  flex: 0 0 auto;
 `;
 
 const LogoLink = styled(Link)`

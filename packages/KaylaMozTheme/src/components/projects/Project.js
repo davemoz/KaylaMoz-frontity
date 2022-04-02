@@ -1,5 +1,5 @@
 import React from "react";
-import { connect, Head } from "frontity";
+import { connect } from "frontity";
 import Image from "@frontity/components/image";
 import dayjs from "dayjs";
 
@@ -14,13 +14,6 @@ const Project = ({ state, libraries }) => {
 
   return (
     <div>
-      <Head>
-        <title>Kayla Moz - Portfolio - {project.title.rendered}</title>
-        <meta
-          name="description"
-          content={project.excerpt && project.excerpt.rendered}
-        />
-      </Head>
       <h2 dangerouslySetInnerHTML={{ __html: project.title.rendered }} />
       <p>
         <strong>Posted: </strong>

@@ -6,10 +6,10 @@ import Switch from "@frontity/components/switch";
 import Loading from "../components/Loading";
 import Header from "../components/layout/Header";
 
-import Archive from "../posts/Archive";
-import Page from "../posts/Page";
+import Archive from "./Archive";
+import Page from "../components/layout/Page";
 import Post from "../posts/Post";
-import Project from "../posts/Project";
+import Project from "../components/projects/Project";
 
 import Blog from "./Blog";
 import Error from "./Error";
@@ -44,6 +44,9 @@ const Root = ({ state, actions }) => {
 
           img {
             max-width: 100%;
+          }
+          .css-tkqsdv-Container img {
+            height: unset !important;
           }
           h2 {
             margin: 0.5em 0;

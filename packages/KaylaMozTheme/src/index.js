@@ -25,6 +25,11 @@ const KaylaMozTheme = {
   },
   actions: {
     theme: {
+      init: ({ libraries }) => {
+        // We use html2react to process the <img> tags inside the content HTML.
+        libraries.html2react.processors.push(image);
+        libraries.html2react.processors.push(link);
+      },
       updateProjectFilters: ({ state }) => (taxonomy, value) => {
         if (!!state.theme.projectFilters && state.theme.projectFilters[taxonomy].includes(value)) {
           state.theme.projectFilters[taxonomy].remove(value);
@@ -36,11 +41,6 @@ const KaylaMozTheme = {
       toggleMenu: ({ state }) => {
         state.theme.isMenuOpen = !state.theme.isMenuOpen;
       },
-    },
-  },
-  libraries: {
-    html2react: {
-      processors: [image, link],
     },
   },
 };

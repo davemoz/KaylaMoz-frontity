@@ -2,7 +2,7 @@ import { useState } from "react";
 import { connect, styled } from "frontity";
 
 import Link from "@frontity/components/link";
-import ProjectCard from '../components/items/ProjectCard';
+import ProjectCard from '../components/projects/ProjectCard';
 // import FilterBar from '../components/filter/FilterBar';
 import PrevNextNav from '../components/nav/PrevNextNav';
 
