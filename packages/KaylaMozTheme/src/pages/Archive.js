@@ -24,12 +24,7 @@ const Archive = ({ state, actions }) => {
       <Grid>
         {data.items.map((item) => {
           const post = state.source[item.type][item.id];
-          let attachment;
-          for (const attach of Object.values(attachments)) {
-            if (attach.id === post.featured_media) {
-              attachment = attachments[attach.id];
-            }
-          }
+
           switch (post.type) {
             case 'portfolio':
               // if (selectedTypes.every(type => post['project-type'].includes(type))
@@ -38,7 +33,6 @@ const Archive = ({ state, actions }) => {
                 <ProjectCard
                   key={post.id}
                   project={post}
-                  media={!!attachment && attachment}
                 />
               );
             // }
